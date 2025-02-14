@@ -1614,7 +1614,7 @@
 			const contentElements = payload.contentElements || [],
 				$container = payload.$container;
 
-			$container.find( '[data-is-block*="/"]' ).each( ( index, el ) => {
+			$container.find( '[data-is-block*="./"]' ).each( ( index, el ) => {
 				window.JetPlugins.hooks.doAction( window.JetPlugins.hookNameFromBlock( el.dataset.isBlock ), jQuery( el ) );
 			} );
 		},
