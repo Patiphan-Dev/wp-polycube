@@ -24,8 +24,8 @@
 		/*! This file is auto-generated */
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
-	<link rel='stylesheet' id='hello-elementor-theme-style-css'
-		href='../../wp-content/themes/hello-elementor/theme.mindeae.css?ver=3.2.1' media='all' />
+	<!-- <link rel='stylesheet' id='hello-elementor-theme-style-css'
+		href='../../wp-content/themes/hello-elementor/theme.mindeae.css?ver=3.2.1' media='all' /> -->
 	<link rel='stylesheet' id='jet-menu-hello-css'
 		href='../../wp-content/plugins/jet-menu/integration/themes/hello-elementor/assets/css/stylea987.css?ver=2.4.7.1'
 		media='all' />
@@ -993,9 +993,9 @@
 				data-elementor-post-type="page">
 				<div class="elementor-element elementor-element-25cddb5 e-flex e-con-boxed e-con e-parent"
 					data-id="25cddb5" data-element_type="container"
-					data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3.1,&quot;sizes&quot;:[]},&quot;background_video_link&quot;:&quot;https:\/\/storage.googleapis.com\/media.nconnect.co.th\/dot-particle-showing-the-internet-connectivity-all-2023-11-27-05-00-51-utc-web.mp4&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;background_motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+					data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3.1,&quot;sizes&quot;:[]},&quot;background_video_link&quot;:&quot;https:\/\/storage.googleapis.com\/media.nconnect.co.th\/dot-particle-showing-the-internet-connectivity-all-2023-11-27-05-00-51-utc-web.mp4&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;background_motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
 					<div class="e-con-inner">
-						<div class="elementor-background-video-container elementor-hidden-mobile">
+						<div class="elementor-background-video-container ">
 							<video class="elementor-background-video-hosted elementor-html5-video" autoplay muted
 								playsinline loop></video>
 						</div>
@@ -1627,7 +1627,7 @@
 																		sizes="(max-width: 800px) 100vw, 800px" /> </a>
 															</div>
 														</div>
-														<div class="elementor-element elementor-element-6e84789f elementor-hidden-mobile elementor-widget elementor-widget-heading"
+														<div class="elementor-element elementor-element-6e84789f  elementor-widget elementor-widget-heading"
 															data-id="6e84789f" data-element_type="widget"
 															data-widget_type="heading.default">
 															<div class="elementor-widget-container">
@@ -1638,7 +1638,7 @@
 																</h2>
 															</div>
 														</div>
-														<div class="elementor-element elementor-element-d946759 elementor-hidden-mobile elementor-widget elementor-widget-heading"
+														<div class="elementor-element elementor-element-d946759  elementor-widget elementor-widget-heading"
 															data-id="d946759" data-element_type="widget"
 															data-widget_type="heading.default">
 															<div class="elementor-widget-container">
