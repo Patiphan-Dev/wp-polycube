@@ -124,6 +124,114 @@
 	<link rel="apple-touch-icon" href="../wp-content/uploads/2024/09/cropped-Favicon-180x180.png" />
 	<meta name="msapplication-TileImage" content="../wp-content/uploads/2024/09/cropped-Favicon-270x270.png" />
 
+	<style>
+		.carousel-container {
+			position: relative;
+			max-width: 100%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		.carousel {
+			display: flex;
+			gap: 30px;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.carousel-item {
+			min-width: calc((100% - 40px) / 3);
+			background: white;
+			overflow: hidden;
+			text-align: center;
+			padding-bottom: 20px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.carousel-item img {
+			width: 100%;
+			height: auto;
+		}
+
+		.carousel-item h3 {
+			color: green;
+			font-size: 18px;
+			margin: 15px 0;
+		}
+
+		.read-more {
+			display: inline-block;
+			background: green;
+			color: white;
+			padding: 20px 20px;
+			text-decoration: none;
+			border-radius: 20px;
+			font-size: 14px;
+		}
+
+		.carousel-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background: white !important;
+			border: none;
+			cursor: pointer;
+			font-size: 24px;
+			padding: 10px;
+			border-radius: 50%;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			display: block;
+		}
+
+		.prev {
+			left: 0px;
+		}
+
+		.next {
+			right: 0px;
+		}
+
+		/* ✅ Media Queries เพื่อรองรับ Responsive */
+		@media (max-width: 1024px) {
+			.carousel-item {
+				flex: 1 1 calc((100% - 20px) / 2);
+			}
+		}
+
+		@media (max-width: 768px) {
+			.carousel {
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+			}
+
+			.carousel-item {
+				/* flex: 1 1 100%; */
+				scroll-snap-align: center;
+				min-width: 100%;
+				/* ให้แสดงแค่ 1 รายการเมื่อหน้าจอขนาดเล็ก */
+			}
+
+			.prev,
+			.next {
+				font-size: 20px;
+				padding: 8px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.carousel-item {
+				/* flex: 1 1 100%; */
+				min-width: 100%;
+				/* ให้แสดงแค่ 1 รายการเมื่อหน้าจอขนาดเล็ก */
+			}
+
+			.prev,
+			.next {
+				display: none;
+			}
+		}
+	</style>
+
 </head>
 
 <body
@@ -2593,114 +2701,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<style>
-		.carousel-container {
-			position: relative;
-			width: 100%;
-			margin: auto;
-			overflow: hidden;
-		}
-
-		.carousel {
-			display: flex;
-			gap: 30px;
-			transition: transform 0.5s ease-in-out;
-		}
-
-		.carousel-item {
-			min-width: calc((100% - 40px) / 3);
-			background: white;
-			overflow: hidden;
-			text-align: center;
-			padding-bottom: 20px;
-			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-		}
-
-		.carousel-item img {
-			width: 100%;
-			height: auto;
-		}
-
-		.carousel-item h3 {
-			color: green;
-			font-size: 18px;
-			margin: 15px 0;
-		}
-
-		.read-more {
-			display: inline-block;
-			background: green;
-			color: white;
-			padding: 20px 20px;
-			text-decoration: none;
-			border-radius: 20px;
-			font-size: 14px;
-		}
-
-		.carousel-btn {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			background: white !important;
-			border: none;
-			cursor: pointer;
-			font-size: 24px;
-			padding: 10px;
-			border-radius: 50%;
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-			display: block;
-		}
-
-		.prev {
-			left: 0px;
-		}
-
-		.next {
-			right: 0px;
-		}
-
-		/* ✅ Media Queries เพื่อรองรับ Responsive */
-		@media (max-width: 1024px) {
-			.carousel-item {
-				flex: 1 1 calc((100% - 20px) / 2);
-			}
-		}
-
-		@media (max-width: 768px) {
-			.carousel {
-				flex-wrap: nowrap;
-				overflow-x: auto;
-				scroll-snap-type: x mandatory;
-			}
-
-			.carousel-item {
-				/* flex: 1 1 100%; */
-				scroll-snap-align: center;
-				min-width: 100%;
-				/* ให้แสดงแค่ 1 รายการเมื่อหน้าจอขนาดเล็ก */
-			}
-
-			.prev,
-			.next {
-				font-size: 20px;
-				padding: 8px;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.carousel-item {
-				/* flex: 1 1 100%; */
-				min-width: 100%;
-				/* ให้แสดงแค่ 1 รายการเมื่อหน้าจอขนาดเล็ก */
-			}
-
-			.prev,
-			.next {
-				display: none;
-			}
-		}
-	</style>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {

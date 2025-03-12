@@ -1935,7 +1935,41 @@ body.rtl .e-con {
     max-width: var(--content-width);
     padding-inline-end: 0;
     padding-inline-start: 0;
-    width: 100%
+    width: 100%;
+}
+
+.e-con>.e-con-inner {
+    gap: var(--row-gap) var(--column-gap);
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--content-width);
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .e-con>.e-con-inner {
+        width: 88%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .e-con>.e-con-inner {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .e-con>.e-con-inner {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .e-con>.e-con-inner {
+        width: 94%;
+    }
 }
 
 :is(.elementor-section-wrap, [data-elementor-id])>.e-con {

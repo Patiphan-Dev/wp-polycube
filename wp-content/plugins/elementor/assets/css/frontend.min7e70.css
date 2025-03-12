@@ -1935,8 +1935,33 @@ body.rtl .e-con {
     max-width: var(--content-width);
     padding-inline-end: 0;
     padding-inline-start: 0;
-    width: 100%
+    width: 100%;
 }
+
+@media (max-width: 1440px) {
+    .e-con>.e-con-inner {
+        width: 88%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .e-con>.e-con-inner {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .e-con>.e-con-inner {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .e-con>.e-con-inner {
+        width: 94%;
+    }
+}
+
 
 :is(.elementor-section-wrap, [data-elementor-id])>.e-con {
     --margin-left: auto;
@@ -2022,7 +2047,7 @@ body.rtl .e-con {
 
 .e-con.e-con>.e-con-inner>.elementor-widget,
 .elementor.elementor .e-con>.elementor-widget {
-    max-width: 100%
+    max-width: auto;
 }
 
 .e-con .elementor-widget:not(:last-child) {
